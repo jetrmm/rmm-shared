@@ -1,7 +1,7 @@
 package jetrmm
 
 type CheckInNats struct {
-	Agentid string `json:"agent_id"`
+	AgentId string `json:"agent_id"`
 	Version string `json:"version"`
 }
 
@@ -18,7 +18,7 @@ type AgentInfoNats struct {
 }
 
 type WinSvcNats struct {
-	Agentid string           `json:"agent_id"`
+	AgentId string           `json:"agent_id"`
 	WinSvcs []WindowsService `json:"services"`
 }
 
@@ -35,12 +35,12 @@ type WindowsService struct {
 }
 
 type WinWMINats struct {
-	Agentid string      `json:"agent_id"`
+	AgentId string      `json:"agent_id"`
 	WMI     interface{} `json:"wmi"`
 }
 
 type WinDisksNats struct {
-	Agentid string `json:"agent_id"`
+	AgentId string `json:"agent_id"`
 	Disks   []Disk `json:"disks"`
 }
 
@@ -54,7 +54,7 @@ type Disk struct {
 }
 
 type PublicIPNats struct {
-	Agentid  string `json:"agent_id"`
+	AgentId  string `json:"agent_id"`
 	PublicIP string `json:"public_ip"`
 }
 
@@ -69,7 +69,7 @@ type WinSoftwareList struct {
 	Uninstall   string `json:"uninstall"`
 }
 
-type WinSoftwareNats struct {
-	Agentid  string            `json:"agent_id"`
+type WinSoftware struct {
+	AgentId  string            `json:"agent_id"`
 	Software []WinSoftwareList `json:"software"`
 }
