@@ -40,8 +40,8 @@ type WinWMINats struct {
 }
 
 type WinDisksNats struct {
-	AgentId string `json:"agent_id"`
-	Drives   []StorageDrive `json:"drives"`
+	AgentId string         `json:"agent_id"`
+	Drives  []StorageDrive `json:"drives"`
 }
 
 type StorageDrive struct {
@@ -58,7 +58,7 @@ type PublicIPNats struct {
 	PublicIP string `json:"public_ip"`
 }
 
-type WinSoftwareList struct {
+type Software struct {
 	Name        string `json:"name"`
 	Version     string `json:"version"`
 	Publisher   string `json:"publisher"`
@@ -70,6 +70,6 @@ type WinSoftwareList struct {
 }
 
 type WinSoftware struct {
-	AgentId  string            `json:"agent_id"`
-	Software []WinSoftwareList `json:"software"`
+	AgentId  string     `json:"agent_id"`
+	Software []Software `json:"software"`
 }
