@@ -69,7 +69,7 @@ type Software struct {
 	Uninstall   string `json:"uninstall"`
 }
 
-type WinSoftware struct {
+type SoftwareList struct {
 	AgentId  string     `json:"agent_id"`
 	Software []Software `json:"software"`
 }
