@@ -1,6 +1,6 @@
 package jetrmm
 
-type CheckInNats struct {
+type AgentHeaderNats struct {
 	AgentId string `json:"agent_id"`
 	Version string `json:"version"`
 }
