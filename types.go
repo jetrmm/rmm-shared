@@ -23,15 +23,15 @@ type WinSvcNats struct {
 }
 
 type WindowsService struct {
-	Name             string `json:"name"`
-	Status           string `json:"status"`
-	DisplayName      string `json:"display_name"`
-	BinPath          string `json:"binpath"`
-	Description      string `json:"description"`
-	Username         string `json:"username"`
-	PID              uint32 `json:"pid"`
-	StartType        string `json:"start_type"`
-	DelayedAutoStart bool   `json:"autodelay"`
+	Name         string `json:"name"`
+	Status       string `json:"status"`
+	DisplayName  string `json:"display_name"`
+	BinPath      string `json:"binpath"`
+	Description  string `json:"description"`
+	Username     string `json:"username"`
+	PID          uint32 `json:"pid"`
+	StartType    string `json:"start_type"`
+	DelayedStart bool   `json:"delayed_start"`
 }
 
 type WinWMINats struct {
@@ -39,14 +39,14 @@ type WinWMINats struct {
 	WMI     interface{} `json:"wmi"`
 }
 
-type WinDisksNats struct {
+type StorageNats struct {
 	AgentId string         `json:"agent_id"`
 	Drives  []StorageDrive `json:"drives"`
 }
 
 type StorageDrive struct {
 	Device  string `json:"device"`
-	Fstype  string `json:"fstype"`
+	Fstype  string `json:"fstype"` // Filesystem Type
 	Total   string `json:"total"`
 	Used    string `json:"used"`
 	Free    string `json:"free"`
