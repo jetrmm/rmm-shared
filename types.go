@@ -6,15 +6,15 @@ type AgentHeaderNats struct {
 }
 
 type AgentInfoNats struct {
-	AgentId      string  `json:"agent_id"`
-	Username     string  `json:"logged_in_username"`
-	Hostname     string  `json:"hostname"`
-	OS           string  `json:"operating_system"`
-	Platform     string  `json:"plat"`
-	TotalRAM     float64 `json:"total_ram"`
-	BootTime     int64   `json:"boot_time"`
-	RebootNeeded bool    `json:"needs_reboot"`
-	GoArch       string  `json:"goarch"`
+	AgentId       string  `json:"agent_id"`
+	Username      string  `json:"logged_in_username"`
+	Hostname      string  `json:"hostname"`
+	OS            string  `json:"operating_system"`
+	Platform      string  `json:"plat"`
+	TotalRAM      float64 `json:"total_ram"`
+	BootTime      int64   `json:"boot_time"`
+	RebootPending bool    `json:"reboot_pending"` // was "needs_reboot"
+	GoArch        string  `json:"goarch"`
 }
 
 type WinSvcNats struct {
